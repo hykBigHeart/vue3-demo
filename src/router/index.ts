@@ -50,7 +50,17 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Choose',
     component: () => import(/* webpackChunkName: "home" */ '@/views/choose.vue')
   },
-
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import(/* webpackChunkName: "home" */ '@/views/login.vue')
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import(/* webpackChunkName: "home" */ '@/views/register.vue')
+  },
+  
 ]
 
 const router = createRouter({

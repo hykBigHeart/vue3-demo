@@ -3,14 +3,16 @@
     <div class="top-blue"></div>
     <div class="banner"><img src="@/assets/img/choose.png" alt=""></div>
     <div class="bottom-green">
-      <p>登录</p>
-      <p>注册</p>
+      <p @click="router.push({path: '/login'})">登录</p>
+      <p @click="router.push({path: '/register'})">注册</p>
       <p style="border: none;">帮助</p>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useRouter } from "vue-router";
+const router = useRouter();
 
 </script>
 
