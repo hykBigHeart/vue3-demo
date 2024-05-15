@@ -2,7 +2,7 @@
   <div class="dashboard">
     <div class="header flex space-between">
       <div class="title">数字平台</div>
-      <van-button type="primary" size="mini">登录/注册</van-button>
+      <van-button type="primary" size="mini" @click="router.push({path: '/choose'})">登录/注册</van-button>
     </div>
 
     <div class="banner"><img src="@/assets/img/banner.png" alt=""></div>
@@ -36,6 +36,8 @@
 
 <script setup lang="ts">
 import { onMounted } from "vue"
+import { useRouter } from "vue-router";
+const router = useRouter();
 
   onMounted(()=> {
     new window.DPlayer({

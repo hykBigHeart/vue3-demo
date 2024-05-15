@@ -45,6 +45,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Dashboard',
     component: () => import(/* webpackChunkName: "home" */ '@/views/dashboard.vue')
   },
+  {
+    path: '/choose',
+    name: 'Choose',
+    component: () => import(/* webpackChunkName: "home" */ '@/views/choose.vue')
+  },
 
 ]
 
