@@ -19,7 +19,7 @@
           <p><input type="checkbox">记住我</p>
           <p>忘记密码</p>
         </div>
-        <div class="custom-btn">登录</div>
+        <div class="custom-btn" @click="router.push({path: '/personal-center'})">登录</div>
         <div class="bottom-banner"><img src="@/assets/img/login-banner.png" alt=""></div>
       </div>
     </div>
@@ -27,6 +27,8 @@
 </template>
 
 <script setup lang="ts">
+import { useRouter } from "vue-router";
+const router = useRouter();
 
 </script>
 

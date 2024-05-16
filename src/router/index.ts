@@ -60,7 +60,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Register',
     component: () => import(/* webpackChunkName: "home" */ '@/views/register.vue')
   },
-  
+  {
+    path: '/personal-center',
+    name: 'PersonalCenter',
+    component: () => import(/* webpackChunkName: "home" */ '@/views/personalCenter.vue')
+  },
+  {
+    path: '/create',
+    name: 'Create',
+    component: () => import(/* webpackChunkName: "home" */ '@/views/create.vue')
+  }
 ]
 
 const router = createRouter({
