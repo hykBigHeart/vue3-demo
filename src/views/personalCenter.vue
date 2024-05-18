@@ -1,7 +1,10 @@
 <template>
   <div class="personal-center">
     <div class="header flex space-between">
-      <div class="title">数字平台</div>
+      <div class="flex">
+        <img src="@/assets/img/logo.png" style="height: 20px; width: auto; vertical-align: middle;"alt=""/>
+        <div class="title">数字平台</div>
+      </div>
       <img src="@/assets/img/profile-picture.png" alt="">
     </div>
     <div class="container">
@@ -129,6 +132,10 @@ const router = useRouter();
         text-align: center;
         color: #3A6BBA;
         padding: 40px 0;
+        img {
+          width: 50px;
+          height: auto
+        }
       }
     }
   }

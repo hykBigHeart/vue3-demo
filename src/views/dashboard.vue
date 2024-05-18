@@ -1,7 +1,10 @@
 <template>
   <div class="dashboard">
     <div class="header flex space-between">
-      <div class="title">数字平台</div>
+      <div class="flex">
+        <img src="@/assets/img/logo.png" style="height: 20px; width: auto; vertical-align: middle;"alt=""/>
+        <div class="title">数字平台</div>
+      </div>
       <van-button type="primary" size="mini" @click="router.push({path: '/choose'})">登录/注册</van-button>
     </div>
 
@@ -52,6 +55,9 @@ const router = useRouter();
 </script>
 
 <style lang="less"coped>
+  .dashboard {
+    background-color: #EDF1F4
+  }
   .header {
     padding: 5px;
     .title {

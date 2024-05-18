@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="header flex space-between">
-      <div class="title">数字平台</div>
+      <div class="flex">
+        <img src="@/assets/img/logo.png" style="height: 20px; width: auto; vertical-align: middle;"alt=""/>
+        <div class="title">数字平台</div>
+      </div>
       <img src="@/assets/img/rr.png" alt="">
     </div>
     <div class="container">

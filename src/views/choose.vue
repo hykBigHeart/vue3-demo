@@ -28,7 +28,7 @@ const router = useRouter();
   }
   .bottom-green {
     background-color: #66DBAA;
-    height: 60%;
+    height: 70%;
     margin-top: -1px;
     text-align: center;
     color: white;

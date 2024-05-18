@@ -3,8 +3,10 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '@/views/HomeView.vue')
+    // name: 'Home',
+    // component: () => import(/* webpackChunkName: "home" */ '@/views/HomeView.vue')
+    name: 'Dashboard',
+    component: () => import(/* webpackChunkName: "home" */ '@/views/dashboard.vue')
   },
   {
     path: '/about',
@@ -40,11 +42,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "chatpage" */ '@/views/chat')
   },
 
-  {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: () => import(/* webpackChunkName: "home" */ '@/views/dashboard.vue')
-  },
+  // {
+  //   path: '/dashboard',
+  //   name: 'Dashboard',
+  //   component: () => import(/* webpackChunkName: "home" */ '@/views/dashboard.vue')
+  // },
   {
     path: '/choose',
     name: 'Choose',

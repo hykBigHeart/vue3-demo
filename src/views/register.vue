@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="header flex space-between">
-      <div class="title">数字平台</div>
+      <div class="flex">
+        <img src="@/assets/img/logo.png" style="height: 20px; width: auto; vertical-align: middle;"alt=""/>
+        <div class="title">数字平台</div>
+      </div>
       <img src="@/assets/img/rr.png" alt="">
     </div>
     <div class="container">
@@ -62,7 +65,7 @@
 
         <div class="custom-btn-box flex space-between">
           <div style="flex: 1;">
-            <div class="custom-btn">提交注册</div>
+            <div class="custom-btn" @click="router.push({path: '/personal-center'})">提交注册</div>
           </div>
           <div style="flex: 1; text-align: right">
             <div class="custom-btn" style="width: 100px; background: #fff; color: #999B9F; border: 1px solid #9DC1FC; display: inline-block">重置</div>
@@ -75,7 +78,10 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue" 
+import {ref} from "vue"
+import { useRouter } from "vue-router";
+const router = useRouter();
+
 </script>
 
 <style lang="less"scoped>
